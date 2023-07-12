@@ -1,3 +1,22 @@
+:root{
+    --default-font: 20px
+}
+
+/* Possibly make it so that under a certain width then a menu shows up */
+@media (max-width: 800px){
+    :root {
+        --default-font: 40px
+    }
+}
+
+[type = 'text']{
+    font-size: 40px;
+}
+
+#footer-anchor{
+    font-size: var(--default-font, 40px) !important;
+}
+
 .nav-container {
     display: grid;
     grid-template-columns: 20% auto;
@@ -21,10 +40,10 @@
 
 li{
     display: inline-block;
-    margin-right: 160px;
-    
+    margin-right: 100px;
 }
 
 a{
     text-decoration: none;
+    font-size: 30px;
 }
