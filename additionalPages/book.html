@@ -14,78 +14,151 @@
 <body style="background-color: lightblue;">
     <header>
         <nav>
-            <table>
-                <tr>
-                    <td><img src="/images/raindrops.png" width="100" height="100"></td>
-                    <td><h1><b><i>Nature's <br>Canvas</i></b></h1></td>
-                    
-                    <td>
-                        <a href="/index/index.html">Home</a>
-                        <a href="/additionalPages/about.html">About Us</a>
-                        <a href="/additionalPages/services.html">Services</a>
-                        <a href="/additionalPages/about.html">Reviews</a>
-                        <a href="/additionalPages/offers.html">Special Offers</a>
-                        <a href="/additionalPages/contact.html">Contact Us</a>
-                        <a href="/additionalPages/book.html">Book Now</a>
-                    </td>
-            
-                </tr>
-            </table>
-            <hr>
+            <div class="container-fluid" >
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <img src="/images/transparent-logo.png" width="260" height="170">
+                    </div>
+                    <div class="col">
+                        <ul style="padding-top: 67px;">
+                            <li><a href="/index/index.html">Home</a></li> 
+                            <li><a href="/additionalPages/about.html">About Us</a></li>
+                            <li><a href="/additionalPages/services.html">Services</a></li>
+                            <li><a href="/additionalPages/about.html">Reviews</a></li>
+                            <li><a href="/additionalPages/offers.html">Special Offers</a></li>
+                            <li><a href="/additionalPages/contact.html">Contact Us</a></li>
+                            <li><a href="/additionalPages/book.html">Book Now</a></li>
+                        </ul>        
+                    </div>
+                </div>
+            </div>
+            <hr><br>
         </nav>
        
     </header>
 
 
     <main>
-        <form>
-            <label>Contact Details:</label><br>
-            <input type="text" placeholder="First Name"/><br>
-            <input type="text" placeholder="Last Name"><br>
-            <input type="text" placeholder="Company Name (If Applicable)"><br>
-            <input type="text" placeholder="Email"><br>
-            <input type="text" placeholder="Phone Number"><br><br>
+        <div class="container">
+            <form>
+                <label class="form-label">Contact Details:</label><br>
+                <div class="form-floating">
+                    <input class="form-control" type="text" placeholder="First Name"/><br>
+                    <label for="first-name">First Name</label>
+                </div>
+                
+                <div class="form-floating">
+                    <input class="form-control" type="text" placeholder="Last Name"><br>
+                    <label for="last-name">Last Name</label>
+                </div>
+                    
+                <div class="form-floating">
+                    <input class="form-control"type="text" placeholder="Company Name (If Applicable)"><br>
+                    <label for="company-name">Company Name</label>             
+                </div>
 
-            <label>Address:</label><br>
-            <input type="text" placeholder="Street 1"/><br>
-            <input type="text" placeholder="Street 2"><br>
-            <input type="text" placeholder="City"><br>
-            <input type="text" placeholder="State"><br>
-            <input type="text" placeholder="Zip Code"><br><br>
+                <div class="form-floating">
+                    <input class="form-control" type="email" placeholder="Email"><br>
+                    <label for="email">Email</label>
+                </div>
 
-            <label>How Can We Help:</label><br>
-            <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
-            
-            <label>How Did You Find Us:</label><br>
-            <select id="pet-select">
-                <option value="">--Please choose an option--</option>
-                <option value="Facebook">Facebook</option>
-                <option value="Google">Google</option>
-                <option value="People">Word Of Mouth</option>
-                <option value="Other">Other (If Not Listed)</option>
-            </select><br><br>
+                <div class="form-floating">
+                    <input class="form-control" type="tel" placeholder="Phone Number"><br><br>
+                    <label for="phone-number">Phone Number</label>
+                </div>
 
-            <input type="submit" value="Submit">
-        </form>
+                
+                
+                
+                
+
+                <label class="form-label">Address:</label><br>
+                <!-- <input class="form-control" type="text" placeholder="Street 1"/><br>
+                <input class="form-control" type="text" placeholder="Street 2"><br>
+                <input class="form-control" type="text" placeholder="City"><br>
+                <input class="form-control" type="text" placeholder="State"><br>
+                <input class="form-control" type="text" placeholder="Zip Code"><br><br> -->
+
+                <div class="form-floating">
+                    <input class="form-control" type="text" placeholder="Street 1"/><br>
+                    <label for="street-one">Street 1</label>
+                </div>
+                
+                <div class="form-floating">
+                    <input class="form-control" type="text" placeholder="Street 2"><br>
+                    <label for="street-two">Street 2</label>
+                </div>
+                    
+                <div class="form-floating">
+                    <input class="form-control" type="text" placeholder="City"><br>
+                    <label for="city">City</label>             
+                </div>
+
+                <div class="form-floating">
+                    <input class="form-control" type="text" placeholder="State"><br>
+                    <label for="state">State</label>
+                </div>
+
+                <div class="form-floating">
+                    <input class="form-control" type="text" placeholder="Zip Code"><br>
+                    <label for="zip-code">Zip Code</label>
+                </div>
+
+                <label class="form-label">How Can We Help:</label><br>
+                <textarea placeholder="Type Here" class="form-control" name="" id="" cols="30" rows="10"></textarea><br><br>
+                
+                <label class="form-label">How Did You Find Us:</label><br>
+                <select class="form-select" id="option-select">
+                    <option value="">Please Choose An Option</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Google">Google</option>
+                    <option value="People">Word Of Mouth</option>
+                    <option value="Other">Other (If Not Listed)</option>
+                </select><br><br>
+
+                <input class="form-control"  type="submit" value="Submit">
+            </form>
+        </div>
+        
+        <br>
+        
     </main>
-
 
     <footer>
         <hr>
-        Bring back the logo
-        <h1>Nature's Canvas</h1>
-        <p>Tampa Bays leading provider of responsible water management <br> including 
-            efficient irrigation and landscape stormwater drainage.
-        </p>
-        <p>State License Number: #</p>
+        <br>
+        <div class="footer-container">
+            <div class="grid-item">
+                <img src="/images/regular-logo.png" width="400" height="300">
+            </div>
 
-        <h1>Business Info</h1>
-        <p>Serving Salisbury, MD</p>
-        <p>Hours: </p>
-        <a href="/additionalPages/book.html">Book Now</a>
-        <p>List all available social media</p>
-        <a href="#"><p>Back to Top</p></a>
+            <div class="grid-item">
+                <h1><u>Hours</u></h1>
+                <h4>Sunday: CLOSED</h1>
+                <h4>Monday: 9:00 - 5:00</h1>
+                <h4>Tuesday: 9:00 - 5:00</h1>
+                <h4>Wednesday: 9:00 - 5:00</h1>
+                <h4>Thursday: 9:00 - 5:00</h1>
+                <h4>Friday: 9:00 - 5:00</h1>
+                <h4>Saturday: CLOSED</h1>
+            </div>
+
+            <div class="grid-item">
+                <h1><u>Business Info</u></h1>
+                <h4>Serving Salisbury, MD</h4>
+                <div class="icon-container">
+                    <img src="/images/facebook-icon.png" alt="facebook icon">
+                    <img src="/images/instagram-icon.png" alt="instagram icon">
+                </div>
+                
+                <button><a id="footer-anchor" href="/additionalPages/book.html">Book Now</a></button>
+                <button style="height: 35px;"><a id="footer-anchor" href="#"><p>Back to Top</p></a></button>
+            </div>
+        </div>
     </footer>
+
+    <br><br><br>
+    
     
 
 

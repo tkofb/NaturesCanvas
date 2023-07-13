@@ -10,7 +10,7 @@
 }
 
 [type = 'text']{
-    font-size: 40px;
+    font-size: 16px;
 }
 
 #footer-anchor{
@@ -19,7 +19,7 @@
 
 .nav-container {
     display: grid;
-    grid-template-columns: 20% auto;
+    grid-template-columns: 2fr 8fr;
 }
 
 .icon-container {
@@ -29,7 +29,7 @@
 
 .footer-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-item{
