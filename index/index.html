@@ -19,7 +19,7 @@
     <header>
         <nav>
             <div class="container-fluid" >
-                <div class="row row-cols-2">
+                <div class="row row-cols-3">
                     <div class="col">
                         <img src="/images/transparent-logo.png" width="260" height="170">
                     </div>
@@ -34,6 +34,29 @@
                             <li><a href="/additionalPages/book.html">Book Now</a></li>
                         </ul>        
                     </div>
+                    <div class="col">
+                        <div class="container">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Open</button>
+
+                            <div class="modal" id="modal" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title">Modal title</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Modal body text goes here.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr>
@@ -44,48 +67,71 @@
 
     <main>
         <article>
-            <section>
-                <h1 >Hola</h1>
-            <section>
-            <section>
-                <h1>Grand</h1>
-            </section>
+            <div class="container">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Why Us?</h2>
+                            <div class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                                in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img" src="/images/planet-earth.png" alt="Not Found">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
         </article>
     </main>
 
 
     <footer>
         <hr>
-        <div class="footer-container">
-            <div class="grid-item">
-                <img src="/images/regular-logo.png" width="400" height="300">
-            </div>
-
-            <div class="grid-item">
-                <h1><u>Hours</u></h1>
-                <h4>Sunday: CLOSED</h1>
-                <h4>Monday: 9:00 - 5:00</h1>
-                <h4>Tuesday: 9:00 - 5:00</h1>
-                <h4>Wednesday: 9:00 - 5:00</h1>
-                <h4>Thursday: 9:00 - 5:00</h1>
-                <h4>Friday: 9:00 - 5:00</h1>
-                <h4>Saturday: CLOSED</h1>
-            </div>
-
-            <div class="grid-item">
-                <h1><u>Business Info</u></h1>
-                <h4>Serving Salisbury, MD</h4>
-                <div class="icon-container">
-                    <img src="/images/facebook-icon.png" alt="facebook icon">
-                    <img src="/images/instagram-icon.png" alt="instagram icon">
+        <div class="container-lg">
+            <div class="card-group">
+                <div class="grid-item card">
+                    <img class="card-img" src="/images/regular-logo.png" width="400" height="300">
                 </div>
-                
-                <button><a id="footer-anchor" href="/additionalPages/book.html">Book Now</a></button>
-                <button style="height: 30px;"><a id="footer-anchor" href="#"><p>Back to Top</p></a></button>
+    
+                <div class="grid-item card">
+                    <h1><u>Hours</u></h1>
+                    <h4>Sunday: CLOSED</h1>
+                    <h4>Monday: 9:00 - 5:00</h1>
+                    <h4>Tuesday: 9:00 - 5:00</h1>
+                    <h4>Wednesday: 9:00 - 5:00</h1>
+                    <h4>Thursday: 9:00 - 5:00</h1>
+                    <h4>Friday: 9:00 - 5:00</h1>
+                    <h4>Saturday: CLOSED</h1>
+                    <br>
+                </div>
+    
+                <div class="grid-item card">
+                    <h1><u>Business Info</u></h1>
+                    <h4>Serving Salisbury, MD</h4>
+                    <div class="icon-container">
+                        <img src="/images/facebook-icon.png" alt="facebook icon">
+                        <img src="/images/instagram-icon.png" alt="instagram icon">
+                    </div>
+                    
+                    <a href="/additionalPages/book.html" class="btn btn-primary" id="footer-anchor" >Book Now</a>
+                    <a class="btn btn-primary" id="footer-anchor" style="max-height: 45px;" href="#"><p>Back to Top</p></a>
+                </div>
             </div>
+            
         </div>
     </footer>
     
+    <br><br><br>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
