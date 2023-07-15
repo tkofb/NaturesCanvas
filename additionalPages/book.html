@@ -13,28 +13,28 @@
 
 <body style="background-color: lightblue;">
     <header>
-        <nav>
-            <div class="container-fluid" >
-                <div class="row row-cols-2">
-                    <div class="col">
-                        <img src="/images/transparent-logo.png" width="260" height="170">
-                    </div>
-                    <div class="col">
-                        <ul style="padding-top: 67px;">
-                            <li><a href="/index/index.html">Home</a></li> 
-                            <li><a href="/additionalPages/about.html">About Us</a></li>
-                            <li><a href="/additionalPages/services.html">Services</a></li>
-                            <li><a href="/additionalPages/about.html">Reviews</a></li>
-                            <li><a href="/additionalPages/offers.html">Special Offers</a></li>
-                            <li><a href="/additionalPages/contact.html">Contact Us</a></li>
-                            <li><a href="/additionalPages/book.html">Book Now</a></li>
-                        </ul>        
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-xxl navbar-light bg-light">
+            <div class="container-fluid">
+                <img src="/images/transparent-logo.png" width="260" height="170" alt="Brand Logo" class="navbar-brand">
+                <button style="margin-right: 50px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Keep Flirting with the button in the navbar idea-->
+                <!--<li class = navbar-item> <button class="btn btn-primary"><a class="nav-link active" href="/index/index.html">Home</a></button> </li> -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class = navbar-item> <a class="nav-link" href="/index/index.html">Home</a></li> 
+                        <li class = navbar-item><a class="nav-link" href="/additionalPages/about.html">About Us</a></li>
+                        <li class = navbar-item><a class="nav-link" href="/additionalPages/services.html">Services</a></li>
+                        <li class = navbar-item><a class="nav-link" href="/additionalPages/about.html">Reviews</a></li>
+                        <li class = navbar-item><a class="nav-link" href="/additionalPages/offers.html">Special Offers</a></li>
+                        <li class = navbar-item><a class="nav-link" href="/additionalPages/contact.html">Contact Us</a></li>
+                        <li class = navbar-item><a class="nav-link active" href="/additionalPages/book.html">Book Now</a></li>		
+                    </ul>		  
+                  </div>
             </div>
-            <hr><br>
         </nav>
-       
+        <br>
     </header>
 
 
@@ -129,39 +129,44 @@
         
     </main>
 
+
     <footer>
         <hr>
-        <br>
-        <div class="footer-container">
-            <div class="grid-item">
-                <img src="/images/regular-logo.png" width="400" height="300">
-            </div>
-
-            <div class="grid-item">
-                <h1><u>Hours</u></h1>
-                <h4>Sunday: CLOSED</h1>
-                <h4>Monday: 9:00 - 5:00</h1>
-                <h4>Tuesday: 9:00 - 5:00</h1>
-                <h4>Wednesday: 9:00 - 5:00</h1>
-                <h4>Thursday: 9:00 - 5:00</h1>
-                <h4>Friday: 9:00 - 5:00</h1>
-                <h4>Saturday: CLOSED</h1>
-            </div>
-
-            <div class="grid-item">
-                <h1><u>Business Info</u></h1>
-                <h4>Serving Salisbury, MD</h4>
-                <div class="icon-container">
-                    <img src="/images/facebook-icon.png" alt="facebook icon">
-                    <img src="/images/instagram-icon.png" alt="instagram icon">
+        <br><br>
+        <div class="container-lg">
+            <div class="card-group">
+                <div class="grid-item card">
+                    <img class="card-img" src="/images/regular-logo.png" width="400" height="300">
                 </div>
-                
-                <button><a id="footer-anchor" href="/additionalPages/book.html">Book Now</a></button>
-                <button style="height: 35px;"><a id="footer-anchor" href="#"><p>Back to Top</p></a></button>
+    
+                <div class="grid-item card">
+                    <h1>Hours</h1>
+                    <h4>Sunday: CLOSED</h1>
+                    <h4>Monday: 9:00 - 5:00</h1>
+                    <h4>Tuesday: 9:00 - 5:00</h1>
+                    <h4>Wednesday: 9:00 - 5:00</h1>
+                    <h4>Thursday: 9:00 - 5:00</h1>
+                    <h4>Friday: 9:00 - 5:00</h1>
+                    <h4>Saturday: CLOSED</h1>
+                    <br>
+                </div>
+    
+                <div class="grid-item card">
+                    <h1>Business Info</h1>
+                    <h4>Serving Salisbury, MD</h4>
+                    <div class="icon-container">
+                        <img src="/images/facebook-icon.png" alt="facebook icon">
+                        <img src="/images/instagram-icon.png" alt="instagram icon">
+                    </div>
+                    
+                    <a href="/additionalPages/book.html" class="btn btn-primary" id="footer-anchor" >Book Now</a>
+                    <a class="btn btn-primary" id="footer-anchor" style="max-height: 45px;" href="#"><p>Back to Top</p></a>
+                </div>
             </div>
+            
         </div>
     </footer>
-
+    
     <br><br><br>
     
     
