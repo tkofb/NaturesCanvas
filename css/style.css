@@ -23,6 +23,13 @@
     max-width: 500px;
 }
 
+.center {
+    margin: auto;
+    margin-top: 13.5%;
+    width: 50%;
+    padding: 10px;
+  }
+
 .nav-container {
     display: grid;
     grid-template-columns: 2fr 8fr;
