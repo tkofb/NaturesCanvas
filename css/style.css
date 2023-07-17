@@ -45,6 +45,11 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.borderless-card{
+    background-color: white; 
+    font-family: serif;
+}
+
 .grid-item{
     display: grid;
     align-items: center;
