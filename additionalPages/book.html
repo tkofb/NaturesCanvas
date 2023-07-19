@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body style="background-color: lightblue;">
+<body style="background-color:lightblue;">
     <header>
         <nav class="navbar navbar-expand-xxl navbar-light bg-light">
             <div class="container-fluid">
@@ -25,17 +25,29 @@
                     <ul class="navbar-nav ">
                         <li class = navbar-item> <a class="nav-link" href="/index/index.html">Home</a></li> 
                         <li class = navbar-item><a class="nav-link" href="/additionalPages/about.html">About Us</a></li>
-                        <li class = navbar-item><a class="nav-link" href="/additionalPages/services.html">Services</a></li>
-                        <li class = navbar-item><a class="nav-link" href="/additionalPages/about.html">Reviews</a></li>
+                        <!--Add Hover feature and active feature for the dropdown-->
+                        <li class="navbar-item dropdown">
+                            <div class="nav-link">
+                                <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--bs-nav-link-color);">
+                                  Services
+                                </a>
+                              
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item"  href="/additionalPages/residential.html">Residential Irrigation</a></li>
+                                  <li><a class="dropdown-item" href="/additionalPages/commercial.html">Commercial Irrigation</a></li>
+                                  <li><a class="dropdown-item" href="/additionalPages/light.html">Outdoor Landscape Lighting</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class = navbar-item><a class="nav-link" href="/additionalPages/reviews.html">Reviews</a></li>
                         <li class = navbar-item><a class="nav-link" href="/additionalPages/offers.html">Special Offers</a></li>
                         <li class = navbar-item><a class="nav-link" href="/additionalPages/contact.html">Contact Us</a></li>
-                        <li class = navbar-item><a class="nav-link active" href="/additionalPages/book.html">Book Now</a></li>	
+                        <li class = navbar-item><a class="nav-link active" href="/additionalPages/book.html">Book Now</a></li>		
                         <p></p>
                     </ul>		  
-                  </div>
+                </div>
             </div>
         </nav>
-        <br>
     </header>
 
 

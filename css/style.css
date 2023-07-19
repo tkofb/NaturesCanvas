@@ -50,6 +50,8 @@
     font-family: serif;
 }
 
+
+
 .grid-item{
     display: grid;
     align-items: center;
@@ -57,11 +59,9 @@
 }
 
 li{
-    display: inline-block;
     margin-right: 100px;
 }
 
 a{
     text-decoration: none;
-    font-size: 30px;
 }
