@@ -1,12 +1,27 @@
+let log = console.log
 
-if (typeof window !== "undefined"){
+let getUserData = () => {
+    let loginFormNodeList = document.querySelectorAll('#loginForm');
+    let allInformation = Array.from(loginFormNodeList)
+    let valueArray = []
+    let informationMap = new Map()
+    let mapLabels = ["name", "email", "phoneNumber", "subject", "description"]
 
-let loginForm = document.getElementById("loginForm");
+    for (let i = 0; i < 5; i++) {
+        valueArray.push(allInformation[0][i].value)
+    } 
 
+    zip(informationMap, mapLabels, valueArray)
 
-loginForm.addEventListener("submit", (e)=>{
-    let firstName = document.getElementById('firstName');
-});
-
-console.log(firstName);
+    return informationMap
 }
+
+let zip = (map, firstArray, secondArray) => {
+    for (let i = 0; i < 5; i++){
+        map.set(firstArray[i], secondArray[i])
+    }
+}
+
+
+userDataMap = getUserData()
+console.log(userDataMap.get("name"))
