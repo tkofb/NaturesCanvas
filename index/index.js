@@ -21,7 +21,7 @@ let zip = (map, firstArray, secondArray) => {
         map.set(firstArray[i], secondArray[i])
     }
 }
-
+// Implement data sharding when doing sql and look at different sharding keys
 
 userDataMap = getUserData()
 console.log(userDataMap.get("name"))
